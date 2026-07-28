@@ -49,7 +49,7 @@ for (let i = 0; i < numbers.length; i++) {
 
 function isPrime(num) {
   if (num < 2) return false;
-  for (let i = 1; i <= num; i++) {
+  for (let i = 2; i <= num; i++) {
     //it stops at 6 instead of reaching 7 so it needs <=
     if (num % i === 0) {
       return true;  // Supposed to indicate num is NOT prime
@@ -58,6 +58,6 @@ function isPrime(num) {
   return false; // Supposed to indicate num IS prime
 }
 
-console.log(isPrime(4)); // Expected true but gets false
+console.log(isPrime(7)); // Expected true but gets false
 
 // What’s Wrong?
